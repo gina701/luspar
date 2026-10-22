@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: luspa-barbershop
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_USERNAME
+        value: owner
+      - key: ADMIN_PASSWORD_HASH
+        sync: false
+      - key: MONGODB_URI
+        sync: false

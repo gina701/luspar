@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#121212"><meta name="description" content="Luspa Barbershop business and accounting manager">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg">
+<link rel="stylesheet" href="/styles.css"><title>Luspa Barbershop</title>
+</head>
+<body>
+<div id="loginScreen" class="login-wrap">
+  <div class="login-card"><div class="brand-mark">✂</div><p class="eyebrow">LUSPA BARBERSHOP</p><h1 data-i18n="welcome">Welcome back</h1><p class="muted" data-i18n="signin">Sign in to manage your business</p>
+  <form id="loginForm"><label><span data-i18n="username">Username</span><input id="username" autocomplete="username" required value="owner"></label><label><span data-i18n="password">Password</span><input id="password" type="password" autocomplete="current-password" required></label><button class="btn primary full" type="submit" data-i18n="signinBtn">Sign in</button><p id="loginError" class="error"></p></form>
+  <p class="tiny muted">Secure owner-only access · Luspa</p></div>
+</div>
+<div id="app" class="app hidden">
+  <aside class="sidebar"><div class="brand"><div class="brand-mark small">✂</div><div><strong>LUSPA</strong><small>BARBERSHOP</small></div></div>
+    <nav id="nav"><button data-page="dashboard" class="nav-item active">▦ <span data-i18n="dashboard">Dashboard</span></button><button data-page="sales" class="nav-item">＋ <span data-i18n="recordSale">Record sale</span></button><button data-page="transactions" class="nav-item">⇄ <span data-i18n="transactions">Transactions</span></button><button data-page="accounts" class="nav-item">▤ <span data-i18n="accounts">Chart of accounts</span></button><button data-page="reports" class="nav-item">▥ <span data-i18n="reports">Financial reports</span></button><button data-page="services" class="nav-item">✂ <span data-i18n="services">Services & prices</span></button><button data-page="settings" class="nav-item">⚙ <span data-i18n="settings">Settings & backup</span></button></nav>
+    <div class="side-bottom"><div class="secure-note">● <span data-i18n="secure">Private owner workspace</span></div><button id="logoutBtn" class="nav-item">↪ <span data-i18n="logout">Sign out</span></button></div>
+  </aside>
+  <main class="main"><header class="topbar"><button id="menuBtn" class="icon-btn mobile-only" aria-label="Menu">☰</button><div><p class="eyebrow" data-i18n="workspace">BUSINESS WORKSPACE</p><h2 id="pageTitle">Dashboard</h2></div><div class="top-actions"><select id="languageSelect" aria-label="Language"><option value="en">English</option><option value="ny">Chichewa</option></select><button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☼</button><div class="avatar">L</div></div></header>
+  <section id="pageContent" class="content"></section><footer>© <span id="year"></span> Luspa Barbershop <span class="footer-dot">•</span> <span data-i18n="footer">Business records & accounting</span></footer></main>
+</div>
+<div id="toast" role="status" class="toast"></div><script src="/app.js"></script>
+</body></html>

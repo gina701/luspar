@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22T06:03:57.929Z",
+  "accounts": [
+    {
+      "code": "1000",
+      "name": "Cash on Hand",
+      "type": "asset",
+      "subtype": "cash"
+    },
+    {
+      "code": "1010",
+      "name": "Bank Account",
+      "type": "asset",
+      "subtype": "cash"
+    },
+    {
+      "code": "1020",
+      "name": "Airtel Money",
+      "type": "asset",
+      "subtype": "cash"
+    },
+    {
+      "code": "1030",
+      "name": "TNM Mpamba",
+      "type": "asset",
+      "subtype": "cash"
+    },
+    {
+      "code": "1100",
+      "name": "Accounts Receivable",
+      "type": "asset",
+      "subtype": "receivable"
+    },
+    {
+      "code": "1200",
+      "name": "Barber Equipment",
+      "type": "asset",
+      "subtype": "fixed"
+    },
+    {
+      "code": "1210",
+      "name": "Accumulated Depreciation",
+      "type": "asset",
+      "subtype": "contra"
+    },
+    {
+      "code": "1300",
+      "name": "Supplies Inventory",
+      "type": "asset",
+      "subtype": "current"
+    },
+    {
+      "code": "2000",
+      "name": "Accounts Payable",
+      "type": "liability",
+      "subtype": "current"
+    },
+    {
+      "code": "2100",
+      "name": "Loans Payable",
+      "type": "liability",
+      "subtype": "longterm"
+    },
+    {
+      "code": "3000",
+      "name": "Owner's Capital",
+      "type": "equity",
+      "subtype": "capital"
+    },
+    {
+      "code": "3100",
+      "name": "Owner's Drawings",
+      "type": "equity",
+      "subtype": "drawings"
+    },
+    {
+      "code": "3200",
+      "name": "Retained Earnings / Opening Balance",
+      "type": "equity",
+      "subtype": "retained"
+    },
+    {
+      "code": "4000",
+      "name": "Haircut Services Revenue",
+      "type": "income",
+      "subtype": "service"
+    },
+    {
+      "code": "4010",
+      "name": "Other Services Revenue",
+      "type": "income",
+      "subtype": "service"
+    },
+    {
+      "code": "4020",
+      "name": "Product Sales Revenue",
+      "type": "income",
+      "subtype": "sales"
+    },
+    {
+      "code": "5000",
+      "name": "Supplies Expense",
+      "type": "expense",
+      "subtype": "operating"
+    },
+    {
+      "code": "5010",
+      "name": "Rent Expense",
+      "type": "expense",
+      "subtype": "operating"
+    },
+    {
+      "code": "5020",
+      "name": "Utilities Expense",
+      "type": "expense",
+      "subtype": "operating"
+    },
+    {
+      "code": "5030",
+      "name": "Wages and Commissions Expense",
+      "type": "expense",
+      "subtype": "operating"
+    },
+    {
+      "code": "5040",
+      "name": "Repairs and Maintenance Expense",
+      "type": "expense",
+      "subtype": "operating"
+    },
+    {
+      "code": "5050",
+      "name": "Marketing Expense",
+      "type": "expense",
+      "subtype": "operating"
+    },
+    {
+      "code": "5060",
+      "name": "Depreciation Expense",
+      "type": "expense",
+      "subtype": "operating"
+    },
+    {
+      "code": "5070",
+      "name": "Other Expense",
+      "type": "expense",
+      "subtype": "operating"
+    }
+  ],
+  "services": [
+    {
+      "id": "ff40f53a-96fe-4f55-9160-9ac24625fda3",
+      "name": "Haircut",
+      "price": 3000,
+      "active": true
+    },
+    {
+      "id": "423d3e57-8b33-4040-97e5-d0496e6e9cec",
+      "name": "Beard trim",
+      "price": 1500,
+      "active": true
+    },
+    {
+      "id": "d4c2bf6a-c353-43c9-a0b9-0f40420f7f05",
+      "name": "Shaving",
+      "price": 1000,
+      "active": true
+    }
+  ],
+  "transactions": [],
+  "settings": {
+    "shopName": "Luspa Barbershop",
+    "currency": "MWK",
+    "language": "ny",
+    "theme": "light"
+  }
+}
